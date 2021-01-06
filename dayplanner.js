@@ -1,5 +1,6 @@
 var plansText = "";
 var plansTime = "";
+var currentHour;
 
 $(document).ready(function () {
 
@@ -13,4 +14,5 @@ $(document).ready(function () {
 //If the hour of the day is less than the hour shwon, add the attribute of future to the time block.
     
     console.log(moment().format("H"));
+    currentHour = (moment().format("H"));
 })
