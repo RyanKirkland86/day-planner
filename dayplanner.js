@@ -19,13 +19,13 @@ $(document).ready(function () {
         timeBlock = i;
 //Write conditionals to add style attributes
         if (currentHour > i){
-            $('#' + timeBlock).addClass("past");
+            $('#' + timeBlock).children('div').children("textarea").addClass("past")
         }
         else if (currentHour < i){
-            $('#' + timeBlock).addClass("future");
+            $('#' + timeBlock).children('div').children("textarea").addClass("future");
         }
         else {
-            $('#' + timeBlock).addClass("present");
+            $('#' + timeBlock).children('div').children("textarea").addClass("present");
         }
     }
 })
