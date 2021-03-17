@@ -2,6 +2,7 @@ var currentHour;
 var timeBlock;
 var userInput;
 var userTime;
+var userPlans = [];
 
 $(document).ready(function () {
 
@@ -53,4 +54,21 @@ $(".saveBtn").on("click", function() {
         We will take these two captured values and pair them together.
         Using a key/value array.
         So we can use this array to save to JSON local storage. */
+    keyVal = {
+        time: userTime,
+        plans: userInput
+    }
+    console.log(keyVal);
+/*  What? How? Why?
+
+*/
+    userPlans = JSON.parse(localStorage.getItem("plans"));
+    if (userPlans === null) {
+        localStorage.setItem("plans", JSON.stringify([{ time: userTime, plans: userInput }]));
+    }
+    else {
+        userPlans.push(keyVal);
+        localStorage.setItem("plans", JSON.stringify(userPlans));
+    }
+    // console.log(userPlans)
 })
