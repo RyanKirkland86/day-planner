@@ -38,43 +38,6 @@ $(document).ready(function () {
 // This is what was working before:
 $(".saveBtn").on("click", function() {
     userInput = $(this).parent("div").children("textarea").val();
-    console.log(userInput);
     userTime = $(this).parent("div").parent().attr("id");
-    console.log(userTime);
     localStorage.setItem(userTime, userInput)
-    // keyVal = {
-    //     time: userTime,
-    //     plans: userInput
-    // }
-    // console.log(keyVal);
-    // userPlans = JSON.parse(localStorage.getItem("plans"));
-    // if (userPlans === null) {
-    //     localStorage.setItem("plans", JSON.stringify([{ time: userTime, plans: userInput }]));
-    // }
-    // else {
-    //     userPlans.push(keyVal);
-    //     localStorage.setItem("plans", JSON.stringify(userPlans));
-    // }
 });
-
-if (localStorage.getItem("9") !== null) {
-    $("9").parent("div").children("textarea").text(localStorage.getItem("9"));
-}
-
-// $(".saveBtn").click(function() {
-//     var value = $(this).siblings(".text-box").val();
-//     // console.log(userInput);
-//     var key = $(this).siblings(".time").text();
-//     // console.log(userTime);
-//     localStorage.setItem(key, value);
-//     console.log(value);
-//     console.log(key);
-// })
-
-// $(".saveBtn").click(function () {
-//     var value = $(this).siblings(".textentry").val();
-//     var key = $(this).siblings(".time").text();
-//     localStorage.setItem(key, value);
-//     console.log(key);
-//     console.log(value);
-// })
