@@ -1,12 +1,12 @@
-# day-planner
+# Work Day Planner
 
 ## Project:
 
 This is a work day planner. The user may input reminders into the text fields according to time and click save, which stores it in local storage. The page will always load what has been stored upon refresh or reboot. Also, the fields of the text boxes will dynamically color code depending on the time of day.
 
-[Deployed Link]()
+[Deployed Link](https://ryankirkland86.github.io/day-planner/)
 
-![Image]()
+![Image](https://github.com/RyanKirkland86/day-planner/blob/main/assets/WorkDayPlanner.png)
 
 ## Technologies Used:
 
@@ -44,7 +44,7 @@ for (var i = 0; i <= 23; i++){
 
 ## Deployed Link:
 
-[Deployed Link]()
+[Deployed Link](https://ryankirkland86.github.io/day-planner/)
 
 ## Authors:
 
